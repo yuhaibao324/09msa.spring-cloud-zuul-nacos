@@ -1,8 +1,8 @@
 spring:
-#  cloud:
-#    nacos:
-#      discovery:
-#        server-addr: localhost:8848
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
   application:
     name: zuul-server
 server:
