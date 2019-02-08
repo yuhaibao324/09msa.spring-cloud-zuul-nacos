@@ -19,7 +19,7 @@ zuul集成Nacos实现动态路由
                "path":"/baidu/**",
                "retryable":false,
                "stripPrefix":true,
-               "url":"http://github.com/Lovnx"
+               "url":"https://www.jd.com/"
            },
            
            {
