@@ -33,3 +33,30 @@ zuul集成Nacos实现动态路由
        ]
    
 # 3. 启动zuul-server，从Nacos加载路由信息测试
+
+
+# 4. 测试
+    4.1 访问：  http://localhost:5555/baidu
+    
+    4.2 修改nacos的zuul配置信息
+    [
+        {
+            "enabled":true,
+            "id":"erer",
+            "path":"/baidu/**",
+            "retryable":false,
+            "stripPrefix":true,
+            "url":"http://www.baidu.com"
+        },
+        
+        {
+            "enabled":true,
+            "id":"pppp",
+            "path":"/client/**",
+            "retryable":false,
+            "stripPrefix":true,
+            "url":"http://localhost:7070"
+        }
+    ]
+    
+    4.3 访问： http://localhost:5555/baidu
